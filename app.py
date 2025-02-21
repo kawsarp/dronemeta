@@ -1,9 +1,10 @@
 import streamlit as st
 import pandas as pd
+import openpyxl
 
 # Load the dataset
 
-df = pd.read_excel('drone_metadata.xlsx')
+df = pd.read_excel('drone_metadata.xlsx', engine='openpyxl')
 
 # Streamlit app title
 st.title("Drone Metadata Viewer")
